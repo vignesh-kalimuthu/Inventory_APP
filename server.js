@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const pool = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
+const reportsRoutes = require("./routes/reports");
+const menuRoutes = require("./routes/menuRoutes");
 
 require("dotenv").config();
 
@@ -22,6 +24,8 @@ app.get("/api/test-db", async (req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
+app.use("/api/menu", menuRoutes);
+app.use("/api/reports", reportsRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
