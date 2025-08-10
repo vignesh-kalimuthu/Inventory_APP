@@ -1,0 +1,85 @@
+# Node (backend + frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files
+.env
+.env.*         # ignore any environment variants (env.local, .env.dev, etc.)
+
+# Logs
+logs/
+*.log
+*.log.*
+/debug.log
+
+# Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build outputs
+dist/
+build/
+.out/
+.next/
+.vite/
+coverage/
+.nyc_output/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Windows
+ehthumbs.db
+Desktop.ini
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.yml
+docker-compose.*.yaml
+docker-compose.override.yml
+Dockerfile*
+
+# Secrets (if any generated)
+*.pem
+*.key
+
+# Optional: client-specific
+/client/build/
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+
+# Optional: server-specific
+/server/.env.local
+/server/.env.development.local
+/server/.env.test.local
+/server/.env.production.local
+
+# Misc
+.idea/
+.vagrant/
+__pycache__/
+*.pyc
+
+# Ignore generated sqlite DB (if you ever use it by accident)
+*.sqlite
